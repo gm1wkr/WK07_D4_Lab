@@ -5,7 +5,7 @@ const CountriesSelect = ({ countries, onCountrySelected }) => {
     // handleSelect
 
 
-    const handleSelectChange =(event) => {
+    const handleSelectChange = (event) => {
         const selectedCountry = event.target.value;
         onCountrySelected(selectedCountry);
     }
@@ -21,7 +21,7 @@ const CountriesSelect = ({ countries, onCountrySelected }) => {
 
 
   return (
-    <select onChange="handleSelectChange">
+    <select onChange={handleSelectChange}>
         {countriesOptions}
     </select>
   )
